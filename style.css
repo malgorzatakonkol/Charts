@@ -1,6 +1,10 @@
-#container1 {
+#containerVertical {
     height: 400px;
     min-width: 320px;
     max-width: 600px;
     margin: 0 auto
+}
+
+#containerRound {
+    height: 400px;
 }

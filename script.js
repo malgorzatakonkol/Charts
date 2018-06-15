@@ -1,6 +1,8 @@
+//first chart
+
 var chartHorizontal = new Highcharts.Chart({
     chart: {
-        renderTo: 'container',
+        renderTo: 'containerHorizontal',
         type: 'column'
     },
     title: {
@@ -39,7 +41,8 @@ var chartHorizontal = new Highcharts.Chart({
         tickInterval: 1
     },
     series: [{
-        data: [3.2, 63.1, 4.4, 0.5, 3.5, 10.1, 15.2]
+        data: [3.2, 63.1, 4.4, 0.5, 3.5, 10.1, 15.2],
+        color: 'green'
     }]
 });
 
@@ -56,7 +59,9 @@ $('#auto').click(function () {
     chartHorizontal.setSize(null);
 });
 
-Highcharts.chart ('container1',{
+//second chart
+
+Highcharts.chart ('containerVertical',{
     chart: {
         type: 'bar'
     },
@@ -99,6 +104,7 @@ Highcharts.chart ('container1',{
     credits: {
         enabled: false
     },
+
     series: [{
         name: 'Employed in the IT industry',
         data: [
@@ -116,3 +122,39 @@ Highcharts.chart ('container1',{
         ]
     }]
 });
+
+//third chart
+
+Highcharts.chart ('containerRound', {
+    chart: {
+        type: 'pie'
+    },
+    xAxis: {
+        categories: ['Blogs', 'Portals', 'Photos', 'Forums', 'Social media', 'Micro blogs', 'Videos']
+    },
+    plotOptions: {
+        series: {
+            allowPointSelect: true
+        }
+    },
+    title: {
+        text: 'PROGRAMISTA [PROGRAMMER] / PROGRAMISTKA [FEMALE PROGRAMMER] – TYPES OF MEDIA'
+    },
+    subtitle: {
+        text: 'Female programmer'
+    },
+    series: [{
+        type: 'pie',
+        data: [
+            ['Blogs: 1%', 1],
+            ['Portals: 13%', 13],
+            ['Photos: 22%', 22],
+            ['Forums: 27%', 27],
+            ['Social media: 27%', 27],
+            ['Micro blogs: 4%', 4],
+            ['Videos: 6%', 6]
+            ]
+    }]
+});
+
+//the button action
