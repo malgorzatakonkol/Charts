@@ -125,7 +125,7 @@ Highcharts.chart ('containerVertical',{
 
 //third chart
 
-Highcharts.chart ('containerRound', {
+Highcharts.chart ('containerRound1', {
     chart: {
         type: 'pie'
     },
@@ -138,23 +138,57 @@ Highcharts.chart ('containerRound', {
         }
     },
     title: {
-        text: 'PROGRAMISTA [PROGRAMMER] / PROGRAMISTKA [FEMALE PROGRAMMER] – TYPES OF MEDIA'
+        text: 'Female programmer'
     },
     subtitle: {
-        text: 'Female programmer'
+        enabled: true
     },
     series: [{
         type: 'pie',
         data: [
             ['Blogs: 1%', 1],
-            ['Portals: 13%', 13],
-            ['Photos: 22%', 22],
-            ['Forums: 27%', 27],
+            ['Portals: 27%', 27],
+            ['Photos: 6%', 6],
+            ['Forums: 13%', 13],
             ['Social media: 27%', 27],
-            ['Micro blogs: 4%', 4],
-            ['Videos: 6%', 6]
+            ['Micro blogs: 22%', 22],
+            ['Videos: 4%', 4]
             ]
     }]
 });
 
-//the button action
+//fourth chart
+
+Highcharts.chart ('containerRound2', {
+    chart: {
+        type: 'pie'
+    },
+    xAxis: {
+        categories: ['Blogs', 'Portals', 'Photos', 'Forums', 'Social media', 'Micro blogs', 'Videos']
+    },
+    plotOptions: {
+        series: {
+            allowPointSelect: true
+        }
+    },
+    title: {
+        text: 'Programmer'
+    },
+    subtitle: {
+        enabled: true
+    },
+    series: [{
+        type: 'pie',
+        data: [
+            ['Blogs: 1%', 1],
+            ['Portals: 15%', 15],
+            ['Photos: 2%', 2],
+            ['Forums: 19%', 19],
+            ['Social media: 29%', 29],
+            ['Micro blogs: 28%', 28],
+            ['Videos: 6%', 6]
+        ]
+    }]
+});
+
+

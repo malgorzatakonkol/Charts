@@ -5,6 +5,21 @@
     margin: 0 auto
 }
 
-#containerRound {
+#comparison {
+    display: flex;
+}
+
+#containerRound1 {
     height: 400px;
 }
+
+#containerRound2 {
+    height: 400px;
+}
+
+@media screen and (max-width: 720px) {
+    #comparison {
+        flex-direction: column; /*dzieci ustawiają się pod sobą*/
+    }
+}
+
