@@ -66,10 +66,10 @@ Highcharts.chart ('containerVertical',{
         type: 'bar'
     },
     title: {
-        text: 'SALARY LEVEL'
+        text: 'What is your average monthly net salary (take-home salary)?'
     },
     subtitle: {
-        text: 'What is your average monthly net salary (take-home salary)?'
+        enabled: true
     },
     xAxis: {
         type: 'category',
