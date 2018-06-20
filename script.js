@@ -1,3 +1,19 @@
+$(document).ready(function() {
+
+    $('a[href^="#"]').on('click', function(event) {
+
+        var target = $( $(this).attr('href') );
+
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+
+});
+
 //first chart
 
 var chartHorizontal = new Highcharts.Chart({
@@ -121,7 +137,7 @@ Highcharts.chart ('containerVertical',{
             ["PLN 9001-10000", 1.2],
             ["PLN 10001-15000", 3.8],
             ["More than 15 000", 0.9]
-        ],
+        ]
     }]
 });
 
@@ -192,5 +208,3 @@ Highcharts.chart ('containerRound2', {
         ]
     }]
 });
-
-

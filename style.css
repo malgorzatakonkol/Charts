@@ -78,6 +78,7 @@ h3 {
     margin: 0 auto
 }
 
+
 #report {
     padding: 10px;
     font-size: 16px;
@@ -93,6 +94,14 @@ a {
     color: #e31b6d;
 }
 
+#small, #large, #auto {
+    cursor: pointer;
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
 @media screen and (max-width: 871px) {
     #comparison {
