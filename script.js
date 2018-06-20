@@ -177,6 +177,9 @@ Highcharts.chart ('containerRound2', {
     subtitle: {
         enabled: true
     },
+    style: {
+        backgroundColor: "yellow"
+    },
     series: [{
         type: 'pie',
         data: [

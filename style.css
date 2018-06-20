@@ -10,7 +10,7 @@ body {
 #container {
     max-width: 1450px;
     margin: 0 auto;
-
+    background-color: #f9f3f4;
 }
 
 #particles-js {
@@ -47,6 +47,10 @@ body {
     border: #fff 1px solid;
 }
 
+h2, h3 {
+    text-align: center;
+}
+
 #containerVertical {
     height: 400px;
     min-width: 320px;
@@ -56,16 +60,17 @@ body {
 
 #comparison {
     display: flex;
-    align-items: center;
 }
 
-#containerRound1 {
+#containerRound1, #containerRound2 {
     height: 400px;
+    margin: 0 auto
 }
 
-#containerRound2 {
-    height: 400px;
-}
+/*#containerRound2 {*/
+    /*height: 400px;*/
+    /*margin: 0 auto*/
+/*}*/
 
 @media screen and (max-width: 720px) {
     #comparison {
