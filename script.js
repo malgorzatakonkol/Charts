@@ -163,6 +163,7 @@ Highcharts.chart ('containerRound1', {
     },
     series: [{
         type: 'pie',
+        cursor: 'pointer',
         data: [
             ['Blogs: 1%', 1],
             ['Portals: 27%', 27],
@@ -197,6 +198,7 @@ Highcharts.chart ('containerRound2', {
     },
     series: [{
         type: 'pie',
+        cursor: 'pointer',
         data: [
             ['Blogs: 1%', 1],
             ['Portals: 15%', 15],
