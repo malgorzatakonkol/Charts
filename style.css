@@ -8,7 +8,7 @@ body {
 }
 
 #particles-js {
-    background-image: url("image.jpg");
+    background-image: url("image/image.jpg");
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -101,6 +101,16 @@ a {
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+#small:focus, #large:focus, #auto:focus{
+    outline: none !important;
+    border-color: #46b8da;
+    box-shadow: 0 0 5px #719ECE;
+}
+
+#small:hover, #large:hover, #auto:hover {
+    background-color: #cccccc;
 }
 
 @media screen and (max-width: 871px) {
