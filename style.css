@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
 #containerVertical {
     height: 400px;
     min-width: 320px;
