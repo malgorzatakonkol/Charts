@@ -7,18 +7,21 @@ body {
 
 }
 
-#container {
-    max-width: 1450px;
-    margin: 0 auto;
-    background-color: #f9f3f4;
-}
-
 #particles-js {
     background-image: url("image/image.jpg");
     background-size: cover;
     height: 100vh;
-
+    width: 100%;
+    margin: 0 auto;
 }
+
+
+#container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 
 .btext {
     color: #f9f3f4;
@@ -47,8 +50,20 @@ body {
     border: #fff 1px solid;
 }
 
-h2, h3 {
+h2 {
     text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: normal;
+}
+
+h2:hover {
+    background-color: #e31b6d;
+}
+
+h3 {
+    font-weight: lighter;
+    text-align: justify;
 }
 
 #containerVertical {
@@ -62,22 +77,41 @@ h2, h3 {
     display: flex;
 }
 
-#containerRound1, #containerRound2 {
+#containerRound1, #containerRound2{
     height: 400px;
     margin: 0 auto
 }
 
-/*#containerRound2 {*/
-    /*height: 400px;*/
-    /*margin: 0 auto*/
-/*}*/
+#report {
+    padding: 10px;
+    font-size: 16px;
+    color: #e31b6d;
+    height: 5vh;
+    margin: 0 auto;
+    text-align: right;
+    line-height: 2em;
+    background-color: rgba(0, 0, 255, 0.2);
+}
 
-@media screen and (max-width: 720px) {
+a {
+    color: #e31b6d;
+}
+
+
+@media screen and (max-width: 871px) {
     #comparison {
-        flex-direction: column; /*dzieci ustawiają się pod sobą*/
+        flex-direction: column;
     }
     .btext {
         line-height: 2em;
     }
+    h3 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #containerRound1, #containerRound2{
+        height: 300px;
+    }
+
 }
 

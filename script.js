@@ -42,7 +42,7 @@ var chartHorizontal = new Highcharts.Chart({
     },
     series: [{
         data: [3.2, 63.1, 4.4, 0.5, 3.5, 10.1, 15.2],
-        color: 'green'
+        color: '#2d98da'
     }]
 });
 
@@ -107,6 +107,8 @@ Highcharts.chart ('containerVertical',{
 
     series: [{
         name: 'Employed in the IT industry',
+        background: 'yellow',
+        color: '#45aaf2',
         data: [
             ['Less than PLN 1500', 2.0],
             ["PLN 1500-3000", 19.7],
@@ -119,7 +121,7 @@ Highcharts.chart ('containerVertical',{
             ["PLN 9001-10000", 1.2],
             ["PLN 10001-15000", 3.8],
             ["More than 15 000", 0.9]
-        ]
+        ],
     }]
 });
 
@@ -177,9 +179,6 @@ Highcharts.chart ('containerRound2', {
     subtitle: {
         enabled: true
     },
-    style: {
-        backgroundColor: "yellow"
-    },
     series: [{
         type: 'pie',
         data: [
@@ -194,5 +193,4 @@ Highcharts.chart ('containerRound2', {
     }]
 });
 
-//paticle
 
