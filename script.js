@@ -1,10 +1,10 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('a[href^="#"]').on('click', function(event) {
+    $('a[href^="#"]').on('click', function (event) {
 
-        var target = $( $(this).attr('href') );
+        var target = $($(this).attr('href'));
 
-        if( target.length ) {
+        if (target.length) {
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: target.offset().top
@@ -77,7 +77,7 @@ $('#auto').click(function () {
 
 //second chart
 
-Highcharts.chart ('containerVertical',{
+Highcharts.chart('containerVertical', {
     chart: {
         type: 'bar'
     },
@@ -143,7 +143,7 @@ Highcharts.chart ('containerVertical',{
 
 //third chart
 
-Highcharts.chart ('containerRound1', {
+Highcharts.chart('containerRound1', {
     chart: {
         type: 'pie'
     },
@@ -172,13 +172,13 @@ Highcharts.chart ('containerRound1', {
             ['Social media: 27%', 27],
             ['Micro blogs: 22%', 22],
             ['Videos: 4%', 4]
-            ]
+        ]
     }]
 });
 
 //fourth chart
 
-Highcharts.chart ('containerRound2', {
+Highcharts.chart('containerRound2', {
     chart: {
         type: 'pie'
     },

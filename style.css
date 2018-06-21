@@ -3,8 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    font-family: 'Rajdhani', sans-serif;
 }
 
 #particles-js {
@@ -15,13 +14,11 @@ body {
     margin: 0 auto;
 }
 
-
 #container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0;
 }
-
 
 .btext {
     color: #f9f3f4;
@@ -31,7 +28,7 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     line-height: 1.4em;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     padding: 1rem;
 }
@@ -54,7 +51,7 @@ h2 {
     text-align: center;
     font-size: 30px;
     margin-top: 40px;
-    font-weight: normal;
+    font-weight: bolder;
 }
 
 h3 {
@@ -73,11 +70,10 @@ h3 {
     display: flex;
 }
 
-#containerRound1, #containerRound2{
+#containerRound1, #containerRound2 {
     height: 400px;
     margin: 0 auto
 }
-
 
 #report {
     padding: 10px;
@@ -103,7 +99,7 @@ a {
     text-transform: uppercase;
 }
 
-#small:focus, #large:focus, #auto:focus{
+#small:focus, #large:focus, #auto:focus {
     outline: none !important;
     border-color: #46b8da;
     box-shadow: 0 0 5px #719ECE;
@@ -117,14 +113,17 @@ a {
     #comparison {
         flex-direction: column;
     }
+
     .btext {
         line-height: 2em;
     }
+
     h3 {
         margin-left: 10px;
         margin-right: 10px;
     }
-    #containerRound1, #containerRound2{
+
+    #containerRound1, #containerRound2 {
         height: 300px;
     }
 
