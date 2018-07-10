@@ -131,11 +131,11 @@ a {
 }
 
 .parallax_image_first {
-    background-image: url("image/women.jpg");
+    background-image: url("women.jpg");
 }
 
 .parallax_image_second {
-    background-image: url("image/people.jpg");
+    background-image: url("people.jpg");
 }
 
 @media screen and (max-width: 871px) {
